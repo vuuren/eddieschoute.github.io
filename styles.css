@@ -189,10 +189,6 @@ h5:last-child {
     white-space: nowrap;
 }
 
-.search {
-    margin-left: auto;
-}
-
 .expand {
     text-align: end;
 }
@@ -225,7 +221,16 @@ footer {
 }
 
 #search {
-    padding-right: 30px;
+    padding: 7px 30px 7px 12px;   /* gelijke hoogte als hamburger */
+}
+
+@media screen and (max-width: 576px) {
+    #search {
+        width: 136px;					/* beperkte breedte zodat het op iPhone SE past */
+    }
+    .navbar-brand {
+        margin-right: 4px;				/* idem */
+    }
 }
 
 /* Hide native search clear button in WebKit browsers */
